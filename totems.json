@@ -1,0 +1,30 @@
+{
+    "race": [
+        {
+            "name": "Human (Wolf Totem)",
+            "source": "The Gloom Saga Homebrew",
+            "page": "",
+            "ability": [
+              {"str": 2, "con": 1}       
+            ],
+            "size": [],
+            "speed": 30,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "",
+                    "entries": [
+                        ""
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "",
+                    "entries": [
+                        ""
+                    ]
+                }
+            ]
+        }
+    ]
+}

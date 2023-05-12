@@ -1,10 +1,29 @@
 {
+    "_meta": {
+        "sources": [
+            {
+                "json": "TheGloomSaga",
+                "abbreviation": "TGS",
+                "full": "The Gloom Saga - Postapocalyptic Forest Fantasy",
+                "authors": [
+                    "WokinShopash"
+                ],
+                "convertedBy": [
+                    "WokinShopash"
+                ],
+                "version": "1.0",
+                "url": "",
+                "targetSchema": "1.0"
+            }
+        ],
+        "dateAdded": 1683896594,
+        "dateLastModified": 1683896594
+    },
     "race": [
         {
             "name": "Human",
             "source": "TheGloomSaga",
             "page": "",
-            "ability": [],
             "size": ["M"],
             "speed": 30,
 	        "heightAndWeight": {
@@ -47,10 +66,48 @@
 			],
         }
     ],
-    "subrace": {
-			"name": "Human (Totem of Wolf)",
-			"source": "TheGloomSaga",
-			"raceName": "Human",
-			"raceSource": "TheGloomSaga",
-    }
+    "subrace": [
+        {
+    		"name": "Human (Totem of Wolf)",
+    		"source": "TheGloomSaga",
+    		"raceName": "Human",
+    		"raceSource": "TheGloomSaga",
+            "ability": [{"wis": 2, "str": 1}],
+            "entries": [
+                {
+                    "name": "Ability Score Increase",
+                    "type": "entries",
+                    "entries": [
+                        "Your Wisdom score increases by 2 and your Strength score increases by 1."
+                    ]
+                },
+                {
+                    "name": "Pack Power",
+                    "entries": [
+                        "You have advantage on attack rolls against a creature if at least one of the your allies is within 5 feet of the creature and the ally isn’t incapacitated."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Keen Senses",
+                    "entries": [
+                        "You have proficiency in the Perception skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Off the Land",
+                    "entries": [
+                        "You have advantage on Survival checks to find food."
+                    ],
+                    "type": "entries"
+                },
+            ],
+            "skillProficiencies": [
+                {
+                    "perception": true
+                }
+            ],
+        }
+    ]
 }

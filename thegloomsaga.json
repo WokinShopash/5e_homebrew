@@ -444,7 +444,66 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "This spell’s damage increases by {@damage 1d4} when you reach 5th level ({@damage 2d4}), 11th level ({@damage 3d4}), and 17th level ({@damage 4d4}).."
+                        "This spell’s damage increases by {@damage 1d4} when you reach 5th level ({@damage 2d4}), 11th level ({@damage 3d4}), and 17th level ({@damage 4d4})."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ]
+        },
+        {
+            "name": "Blessed Halo",
+            "source": "TheGloomSaga",
+            "level": 2,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                ]
+            },
+            "entries": [
+                "A nimbus of golden light surrounds your head for the duration. The halo sheds bright light in a 20-foot radius and dim light for an additional 20 feet. This spell grants you a pool of 10 points of healing. When you cast the spell and as an action on subsequent turns during the spell’s duration, you can expend points from this pool to restore an equal number of lost hit points to one creature within the spell’s bright light that you can see. Additionally, you have advantage on Charisma checks made against good creatures within the blessed halo's light. If any of this spell’s area overlaps an area of magical darkness created by a spell of 2nd level or lower, the spell that created the {@spell darkness} is dispelled. "
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the spell’s pool of healing increases by 5 points for each spell slot above 2nd and this spell dispels {@spell darkness} spells of a level equal to the slot used in casting blessed halo."
                     ]
                 }
             ],

@@ -1,0 +1,456 @@
+thegloomsaga.json{
+    "_meta": {
+        "sources": [
+            {
+                "json": "TheGloomSaga",
+                "abbreviation": "TGS",
+                "full": "The Gloom Saga - Postapocalyptic Forest Fantasy",
+                "authors": [
+                    "WokinShopash"
+                ],
+                "convertedBy": [
+                    "WokinShopash"
+                ],
+                "version": "1.0",
+                "url": "https://github.com/WokinShopash/5e_homebrew",
+                "targetSchema": "1.0"
+            }
+        ],
+        "dateAdded": 1683896594,
+        "dateLastModified": 1683896594
+    },
+    "race": [
+        {
+            "name": "Human",
+            "source": "TheGloomSaga",
+            "size": ["M"],
+            "speed": 30,
+	        "heightAndWeight": {
+                "baseHeight": 56,
+                "heightMod": "2d10",
+                "baseWeight": 110,
+                "weightMod": "2d4"
+            },
+            "age": {
+                "mature": 20,
+                "max": 100
+            },
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Humans reach adulthood in their late teens and live less than a century."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+                    ]
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on."
+                    ],
+                    "type": "entries"
+                }
+            ],
+            "languageProficiencies": [
+				{
+					"common": true
+				}
+			],
+            "fluff": {
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://i.pinimg.com/originals/23/92/47/23924720a9bbdee6565acf702e23ad2e.png"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "subrace": [
+        {
+    		"name": "Totem of Wolf",
+    		"source": "TheGloomSaga",
+    		"raceName": "Human",
+    		"raceSource": "TheGloomSaga",
+            "ability": [{"wis": 2, "str": 1}],
+            "entries": [
+                {
+                    "name": "Ability Score Increase",
+                    "type": "entries",
+                    "entries": [
+                        "Your Wisdom score increases by 2 and your Strength score increases by 1."
+                    ]
+                },
+                {
+                    "name": "Pack Power",
+                    "entries": [
+                        "You have advantage on attack rolls against a creature if at least one of the your allies is within 5 feet of the creature and the ally isn’t incapacitated."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Keen Senses",
+                    "entries": [
+                        "You have proficiency in the {@skill Perception}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Off the Land",
+                    "entries": [
+                        "You have advantage on {@skill Survival} checks to find food."
+                    ],
+                    "type": "entries"
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "perception": true
+                }
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "fluff": {
+                "entries": [
+                    "This human is a true embodiment of the fierce and wise spirit of the wolf. Guided by their totem, this individual possesses a natural grace and confidence that is impossible to ignore. With a keen sense of intuition and a deep connection to nature, they move through the world with a sense of purpose and clarity.\n\nAt their core, this person is passionate and loyal, with a powerful drive to protect those they care about. They are highly perceptive, quick to pick up on subtle cues and able to navigate complex social dynamics with ease. Despite their fearsome reputation, they possess a gentle nature and are beloved by those lucky enough to earn their trust.\n\nWith the wolf as their guide, this human embodies the raw power and strength of the natural world. They are unafraid to take risks and to explore the unknown, always pushing boundaries and striving to reach new heights. But beneath this fierce exterior lies a deep sense of compassion and empathy, making them a true force for good in the world.",
+                    {
+                        "type": "hr"
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://cdn-icons-png.flaticon.com/512/8636/8636407.png"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Totem of Beaver",
+            "source": "TheGloomSaga",
+            "raceName": "Human",
+            "raceSource": "TheGloomSaga",
+            "ability": [{"int": 2, "con": 1}],
+            "toolProficiencies":  [
+                {
+                    "choose": {
+                        "from": [
+                            "carpenter's tools",
+                            "woodcarver's tools"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "persuasion": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Ability Score Increase",
+                    "type": "entries",
+                    "entries": [
+                        "Your Intelligence score increases by 2 and your Constitution score increases by 1."
+                    ]
+                },
+                {
+                    "name": "Forest-wise",
+                    "entries": [
+                        "You gain proficiency in {@item carpenter's tools|phb} or {@item woodcarver's tools|phb}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Reliable",
+                    "entries": [
+                        "You have proficiency in the {@skill Persuasion}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Builder",
+                    "entries": [
+                        "You have advantage on attack rolls to constructions."
+                    ],
+                    "type": "entries"
+                }
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "fluff": {
+                "entries": [
+                    "This human is a true reflection of the industrious and resourceful spirit of the beaver. Guided by their totem, they possess a unique ability to turn even the most challenging situations into an opportunity for growth and innovation. With a tireless work ethic and an unwavering determination, nothing stands in the way of their success. \n\nHighly intuitive and analytical, this person has a sharp mind and a keen eye for detail. They are able to see the bigger picture while also focusing on the finer points, creating solutions that are both strategic and effective. With their natural talent for organization and planning, they excel at bringing order to chaos and finding creative approaches to tackling complex problems. \n\nDespite their hardworking nature, this individual also has a deep appreciation for beauty and harmony. They are often drawn to the arts and creative pursuits, using their skills to enrich the lives of those around them. With their beaver totem guide by their side, they are able to balance their practical nature with a deep sense of empathy and compassion. \n\nUltimately, this person embodies the spirit of the beaver in every aspect of their life. They are driven, dedicated, and always striving to reach new heights. With their innate sense of creativity and innovation, they are a true force for change in the world.",
+                    {
+                        "type": "hr"
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://cdn-icons-png.flaticon.com/512/3940/3940434.png"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Totem of Fish",
+            "source": "TheGloomSaga",
+            "raceName": "Human",
+            "raceSource": "TheGloomSaga",
+            "ability": [{"wis": 2, "cha": 1}],
+            "skillProficiencies": [
+                {
+                    "arcana": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Ability Score Increase",
+                    "type": "entries",
+                    "entries": [
+                        "Your Wisdom score increases by 2 and your Charisma score increases by 1."
+                    ]
+                },
+                {
+                    "name": "Deep knowledge",
+                    "entries": [
+                        "You have proficiency in the {@skill Arcana}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Silent",
+                    "entries": [
+                        "If you have eye contact with a creature, you can telepathically send small message to them. You can use this ability 3 times per long rest. Also you can use {@spell sense emotion|uass} once per long rest"
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Swimmer",
+                    "entries": [
+                        "You have advantage on {@skill Athletics} rolls for swimming."
+                    ],
+                    "type": "entries"
+                }
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "fluff": {
+                "entries": [
+                    "Embodied with the fluidity and grace of the fish, this human glides seamlessly through life, possessing a deep connection with their emotions and an intuitive understanding of the world around them. Guided by their fish totem, they easily adapt to their environment, navigating the current of life with innate wisdom and serenity. \n\nThis individual's keen emotional awareness is a unique gift that helps them attune to the feelings of others, allowing them to offer solace and understanding during troubled times. Their empathetic nature attracts a wide array of people, making them a sought-after confidant and trusted ally. They have a natural tendency to foster harmonious relationships, valuing and maintaining connections that last a lifetime. \n\nLike a fish navigating the depths of the ocean, this person is endlessly curious about the mysteries of life, always seeking new experiences and diving into uncharted territories. They possess an innate wisdom that reminds them to trust their instincts and listen to their inner voice, enabling them to make choices guided by their heart. \n\nTheir connection to the water element imbues them with a sense of creativity and a vivid imagination, allowing them to express themselves artistically in various ways. They are often drawn to activities such as painting, music, poetry, or dance, in which they can channel the watery essence of their fish totem guide.\n\nAll in all, this human truly encapsulates the spirit of the fish, embodying fluidity, adaptability, and emotional depth. They serve as a living reminder that life's journey is full of ebbs and flows, and that serenity and growth can be found in even the most turbulent of waters.",
+                    {
+                        "type": "hr"
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://cdn-icons-png.flaticon.com/512/4582/4582847.png"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Totem of Magpie",
+            "source": "TheGloomSaga",
+            "raceName": "Human",
+            "raceSource": "TheGloomSaga",
+            "ability": [{"wis": 1, "cha": 2}],
+            "skillProficiencies": [
+                {
+                    "sleight of hand": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Ability Score Increase",
+                    "type": "entries",
+                    "entries": [
+                        "Your Charisma score increases by 2 and your Wisdom score increases by 1."
+                    ]
+                },
+                {
+                    "name": "Nimble",
+                    "entries": [
+                        "You have proficiency in the {@skill Sleight of hand}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Sharp eye",
+                    "entries": [
+                        "You have advantage on {@skill Investigation} rolls when analysing a person's belongings."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Chirper",
+                    "entries": [
+                        "You can use {@spell visious mockery|phb} 3 times per long rest"
+                    ],
+                    "type": "entries"
+                }
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "fluff": {
+                "entries": [
+                    "This human exudes the vibrancy and multifaceted spirit of the magpie, their totem guide influencing their curious nature and quick wit. Magpies are renowned for their intelligence and resourcefulness, and these traits are unequivocally reflected in this individual's ability to adapt to any situation that comes their way. They are instinctively drawn to the bright, shiny, and novel aspects of life, giving them a deep appreciation for beauty and exploration. \n\nWith a natural affinity for communication, this person can effortlessly navigate social interactions and engage meaningfully with those they encounter. They have a keen eye for reading the emotions and intentions of others, making them both an insightful confidant and an empathetic listener. Their magnetic charm and humor endear them to their friends, ensuring strong and lasting connections. \n\nAn innate propensity for acquiring and assimilating new information underpins this individual's love for learning and growth. Much like the magpie's ability to collect treasures, they gather diverse experiences and knowledge, enriching their lives and broadening their horizons. Their mind buzzes with new ideas and plans, and they have an uncanny ability to recognize potential opportunities in even the most unlikely circumstances. \n\nCreativity and self-expression are other aspects of their personality that the magpie totem enhances. They often find themselves exploring various artistic outlets, such as painting, writing, or music, where they can exuberantly showcase their talents and unique perspective on life. \n\nUltimately, this human embodies the dynamic spirit of the magpie, coursing through life with liveliness, curiosity, and resilience. They are an unmistakable source of inspiration and a reminder that embracing change and discovery can lead to a life rich with experiences and personal growth.",
+                    {
+                        "type": "hr"
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://cdn-icons-png.flaticon.com/512/9282/9282771.png"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Totem of Otter",
+            "source": "TheGloomSaga",
+            "raceName": "Human",
+            "raceSource": "TheGloomSaga",
+            "ability": [{"cha": 2, "con": 1}],
+            "skillProficiencies":  [
+                {
+                    "choose": {
+                        "from": [
+                            "medicine",
+                            "persuasion",
+                            "animal handling"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Ability Score Increase",
+                    "type": "entries",
+                    "entries": [
+                        "Your Charisma score increases by 2 and your Constitution score increases by 1."
+                    ]
+                },
+                {
+                    "name": "Common Knowledge",
+                    "entries": [
+                        "You gain proficiency in one skill of your choice: {@skill Medicine}, {@skill Persuasion} or {@skill Animal Handling}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Charming Appearance",
+                    "entries": [
+                        "You can use {@spell Friends|phb} cantrip without its negative consequences twice before long rest."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Stash",
+                    "entries": [
+                        "You have advantage on Food recource rolls."
+                    ],
+                    "type": "entries"
+                }
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "fluff": {
+                "entries": [
+                    "Guided by the whimsical and playful spirit of the otter, this human carries an air of joy and lightheartedness that is truly infectious. The otter totem bequeaths them an innate ability to find enjoyment in life's simplest pleasures and to create harmonious connections with everyone they encounter. They exude an irresistible charm and warmth that draw people to them and create an atmosphere of camaraderie and delight. \n\nAt the core of this person's being is a deep sense of emotional intelligence, supported by their otter guide, allowing them to empathize and connect with others on a profound level. They can easily sense what others need and provide the support, understanding, or hearty laugh that can brighten anyone's day. Their genuine kindness and generosity make them a trusted friend and confidant to those fortunate enough to be part of their circle. \n\n With the otter as their totem, this human also possesses a keen curiosity and a natural affinity for learning. Much like otters exploring their watery domain, this person delights in discovering new ideas, skills, and creative pursuits. They approach life with an open mind, eager to make the most of every opportunity that comes their way. \n\nIn times of adversity, they exhibit the adaptability and resourcefulness of an otter, facing challenges head-on with optimism, grace, and humor. Their ability to maintain a sense of balance and joy, even during difficult moments, is an inspiring testament to their strength and resilience. \n\nIn essence, this person embodies the enchanting spirit of the otter, gracing the world with their effervescent presence and playful approach to life. Their exuberant demeanor, infectious laughter, and compassionate heart make them a cherished companion and an enduring beacon of happiness amidst life's inevitable ebbs and flows.",
+                    {
+                        "type": "hr"
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://cdn1.iconfinder.com/data/icons/animals-set-02/100/OTTER_C-512.png"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "spell": [
+        {
+            "name": "Dragon Roar",
+            "source": "TheGloomSaga",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "entries": [
+                "Your voice is amplified to assault the mind of one creature. The target must make a Charisma saving throw. If it fails, the target takes {@damage 1d4} psychic damage and is frightened of you until the start of your next turn. A target can be affected by your dragon roar only once per 24 hours. "
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "This spell’s damage increases by {@damage 1d4} when you reach 5th level ({@damage 2d4}), 11th level ({@damage 3d4}), and 17th level ({@damage 4d4}).."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ]
+        }
+    ]
+}

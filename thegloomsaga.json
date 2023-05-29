@@ -17,7 +17,7 @@
             }
         ],
         "dateAdded": 1683896594,
-        "dateLastModified": 1683896594
+        "dateLastModified": 1685397428
     },
     "race": [
         {
@@ -439,6 +439,9 @@
             "entries": [
                 "Your voice is amplified to assault the mind of one creature. The target must make a Charisma saving throw. If it fails, the target takes {@damage 1d4} psychic damage and is frightened of you until the start of your next turn. A target can be affected by your dragon roar only once per 24 hours. "
             ],
+            "savingThrow": [
+                "Charisma"
+            ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
@@ -507,6 +510,188 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Id Insinuation",
+            "source": "TheGloomSaga",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "entries": [
+                "You unleash a torrent of conflicting desires in the mind of one creature you can see within range, impairing its ability to make decisions. The target must succeed on a Wisdom saving throw or be incapacitated. At the end of each of its turns, it takes {@damage 1d12} psychic damage, and it can then make another Wisdom saving throw. On a success, the spell ends on the target"
+            ],
+            "savingThrow": [
+                "Wisdom"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Mind Thrust",
+            "source": "TheGloomSaga",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "entries": [
+                "You propel a lance of psionic disruption into the mind of one creature you can see within range. The target must make an Intelligence saving throw. On a failed save, the target takes {@damage 3d6} psychic damage, and it can use its action only to Dash or Disengage on its next turn. On a successful save, the target takes half as much damage, and this spell doesn't limit its action options."
+            ],
+            "savingThrow": [
+                "Intelligence"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd. The creatures must be within 30 feet of each other when you target them."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Power Word: Kneel",
+            "source": "TheGloomSaga",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "an emerald worth at least 100 gp"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "When you shout this word of power, creatures within 20 feet of a point you specify are compelled to kneel down facing you. A kneeling creature is treated as prone. Up to 55 hit points of creatures are affected, beginning with those that have the fewest hit points. A kneeling creature makes a Wisdom saving throw at the end of its turn, ending the effect on itself on a successful save. The effect ends immediately on any creature that takes damage while kneeling."
+            ],
+            "savingThrow": [
+                "Wisdom"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
         }
     ]
 }

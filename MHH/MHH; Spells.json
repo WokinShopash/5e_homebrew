@@ -1,0 +1,105 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "midgardheroeshandbook",
+                "abbreviation": "MHH",
+                "full": "Midgard Heroes Handbook",
+                "authors": [
+                    "KoboldPress"
+                ],
+                "convertedBy": [
+                    "WokinShopash"
+                ],
+                "version": "1.0.0",
+                "url": "https://koboldpress.com/kpstore/product/midgard-heroes-handbook-for-5th-edition-dnd-5e/",
+                "targetSchema": "1.0.0"
+            }
+        ],
+        "dateAdded": 1638652175,
+        "dateLastModified": 1638652175
+    },
+    "spell": [
+        {
+            "name": "Broken Charge",
+            "source": "midgardheroeshandbook",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "when an enemy approaches to within 6 feet of you"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "When an enemy that you can see tries to approach to within 6 feet of you, you utter a perplexing word that alters the foe’s path.",
+                "The foe must make a successful Wisdom saving throw or take {@damage 2d4} psychic damage and use the remainder of its speed to move in a direction of your choosing. A foe that makes the saving throw successfully is unaffected."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target takes an additional {@dice 2d4} psychic damage for each slot level above 1st."
+                    ]
+                }
+            ],
+            "page": 155,
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "foundryImg": "icons/magic/unholy/hand-claw-fire-green.webp",
+            "foundrySystem": {
+                "name": "Broken Charge"
+            }
+        }
+    ]
+}

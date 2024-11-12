@@ -100,6 +100,61 @@
             "foundrySystem": {
                 "name": "Broken Charge"
             }
+        },
+        {
+            "name": "Find Kin",
+            "source": "midgardheroeshandbook",
+            "level": 1,
+            "school": "D",
+            "time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a freshly dug up tree root that is consumed by the spell"
+            },
+            "range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "entries": [
+                "You touch one willing creature or make a melee spell attack against an unwilling creature. If the target fails a Wisdom saving throw, you learn the identity, appearance, and location of one randomly-selected living relative of the target.",
+                "A creature can choose to automatically fail this saving throw."
+            ],
+            "page": 167,
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "foundryImg": "icons/magic/perception/eye-ringed-green.webp",
+            "foundrySystem": {
+                "name": "Find Kin"
+            }
         }
     ]
 }

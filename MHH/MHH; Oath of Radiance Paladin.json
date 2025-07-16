@@ -1,0 +1,249 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "midgardheroeshandbook",
+                "abbreviation": "MHH",
+                "full": "Midgard Heroes Handbook",
+                "authors": [
+                    "KoboldPress"
+                ],
+                "convertedBy": [
+                    "WokinShopash"
+                ],
+                "version": "1.0.0",
+                "url": "https://koboldpress.com/kpstore/product/midgard-heroes-handbook-for-5th-edition-dnd-5e/",
+                "targetSchema": "1.0.0"
+            }
+        ],
+        "dateAdded": 1752653029,
+        "dateLastModified": 1752653029
+    },
+    "subclass": [
+        {
+            "name": "Oath of Radiance",
+            "source": "midgardheroeshandbook",
+            "shortName": "Radiance",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassFeatures": [
+                "Oath of Radiance|Paladin||Radiance|midgardheroeshandbook|3",
+                "Aura of Resolve|Paladin||Radiance|midgardheroeshandbook|7",
+                "Soul of Light|Paladin||Radiance|midgardheroeshandbook|15",
+                "Radiant Champion|Paladin||Radiance|midgardheroeshandbook|20"
+            ],
+            "subclassSpells": [
+                "guiding bolt",
+                "protection from evil and good",
+                "magic weapon",
+                "scorching ray",
+                "beacon of hope",
+                "daylight",
+                "aura of life",
+                "fire shield",
+                "banishing smite",
+                "greater restoration"
+            ],
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "guiding bolt|PHB",
+                            "protection from evil and good|PHB"
+                        ],
+                        "5": [
+                            "magic weapon|PHB",
+                            "scorching ray|PHB"
+                        ],
+                        "9": [
+                            "beacon of hope|PHB",
+                            "daylight|PHB"
+                        ],
+                        "13": [
+                            "aura of life|PHB",
+                            "fire shield|PHB"
+                        ],
+                        "17": [
+                            "banishing smite|PHB",
+                            "greater restoration|PHB"
+                        ]
+                    }
+                }
+            ],
+            "foundryImg": "icons/magic/light/beam-strike-orange-gold.webp"
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Oath of Radiance",
+            "source": "midgardheroeshandbook",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Radiance",
+            "subclassSource": "midgardheroeshandbook",
+            "level": 3,
+            "entries": [
+                "The Oath of Radiance is a beacon in the night, burning away the corruption of shadow and undeath. Radiant paladins are bold and brash, abhorring stealth and grandly striding into battle against the forces of darkness.",
+                "Paladins of the Oath of Radiance are overwhelmingly good-aligned, and most are lawful. Some reject the rigid nature of knightly orders for the life of a knight errant. Though still nearly universally good, these wayward paladins are more neutral than lawful, and they use their relative freedom to bring their light to bear as they deem it most necessary.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath Spells|Paladin||Radiance|midgardheroeshandbook|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Dawn’s Radiance|Paladin||Radiance|midgardheroeshandbook|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Turn the Corrupted|Paladin||Radiance|midgardheroeshandbook|3"
+                }
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "midgardheroeshandbook",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Radiance",
+            "subclassSource": "midgardheroeshandbook",
+            "level": 3,
+            "header": 1,
+            "page": 40,
+            "entries": [
+                "{@i 3rd-level Oath of Radiance feature}",
+                "You gain oath spells at the paladin levels listed in the Oath of spell table below.",
+                {
+                    "type": "table",
+                    "caption": "Oath of Radiance Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell guiding bolt}, {@spell protection from evil and good}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell magic weapon}, {@spell scorching ray}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell beacon of hope}, {@spell daylight}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell aura of life}, {@spell fire shield}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell banishing smite} (excluding fire), {@spell greater restoration}"
+                        ]
+                    ]
+                }
+            ],
+            "foundryImg": "icons/magic/light/beam-strike-orange-gold.webp"
+        },
+        {
+            "name": "Channel Divinity: Dawn’s Radiance",
+            "source": "midgardheroeshandbook",
+            "page": 40,
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Radiance",
+            "subclassSource": "midgardheroeshandbook",
+            "level": 3,
+            "header": 2,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "{@i 3rd-level Oath of Radiance feature}",
+                "As an action, you present your holy symbol or a melee weapon, and it flares with the radiance of the newly-risen sun. Magical darkness within 20 feet of you is dispelled. Thereafter, the object continues to shine for 1 hour or until you lose possession of it. The object sheds bright light out to 20 feet and dim light 20 feet beyond that.",
+                "An undead creature, a creature native to the Shadow Realm or with levels of shadow corruption, and any creature harmed by sunlight (such as a creature with the sunlight sensitivity feature) suffers pain and disorientation in this radiance. The creature has disadvantage on attack rolls and on Dexterity (Stealth) and Wisdom (Perception) checks while it, the target of its attack, or anything it is trying to perceive is in the bright light shed by the holy symbol or weapon."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Turn the Corrupted",
+            "source": "midgardheroeshandbook",
+            "page": 40,
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Radiance",
+            "subclassSource": "midgardheroeshandbook",
+            "level": 3,
+            "header": 2,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "{@i 3rd-level Oath of Radiance feature}",
+                "As an action, you present your holy symbol and speak a prayer against the corruptive power of death and shadow, using your Channel Divinity.",
+                "Each undead, or creature native to the Shadow Realm or with levels of shadow corruption, that is within 30 feet of you and that can see or hear you must make a successful Wisdom saving throw or be turned for 1 minute or until it takes damage."
+            ]
+        },
+        {
+            "name": "Aura of Resolve",
+            "entries": [
+                "{@i 7th-level Oath of Radiance feature}",
+                "Beginning at 7th level, you and your allies within 10 feet of you have advantage on saving throws against spells and effects created by undead creatures and by creatures native to the Shadow Realm or with any levels of shadow corruption.",
+                "This benefit lasts until someone fails a saving throw that was made with advantage because of your aura of resolve. Once that happens, you must complete a short or long rest before this ability functions again.",
+                "At 18th level, the range of this aura increases to 30 feet"
+            ],
+            "source": "midgardheroeshandbook",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Radiance",
+            "subclassSource": "midgardheroeshandbook",
+            "page": 40,
+            "level": 7,
+            "header": 1,
+            "foundryImg": "icons/magic/light/beam-strike-orange-gold.webp"
+        },
+        {
+            "name": "Soul of Light",
+            "source": "midgardheroeshandbook",
+            "page": 40,
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Radiance",
+            "subclassSource": "midgardheroeshandbook",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "{@i 15th-level Oath of Radiance feature}",
+                "You can’t gain levels of shadow corruption, you are resistant to necrotic damage and your ability scores and hit point maximum can’t be reduced."
+            ],
+            "foundryImg": "icons/magic/light/beam-strike-orange-gold.webp"
+        },
+        {
+            "name": "Radiant Champion",
+            "source": "midgardheroeshandbook",
+            "page": 40,
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Radiance",
+            "subclassSource": "midgardheroeshandbook",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "{@i 20th-level Oath of Radiance feature}",
+                "As an action, you suffuse your being with divine radiance that brings life and burns away dark corruption. For 1 minute, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"At the start of each of your turns, you regain 10 hit points.",
+                        "Once on your turn when you hit an undead creature, a creature native to the Shadow Realm, or a creature with any levels of shadow corruption, it must make a successful Wisdom saving throw against your spell save DC or be incapacitated until the end of its next turn.",
+                        "An undead creature, a creature native to the Shadow Realm, or a creature with any levels of shadow corruption that touches you or hits you with a melee attack from within 5 feet takes 2d8 radiant damage"
+					]
+				}
+            ],
+            "foundryImg": "icons/magic/light/beam-strike-orange-gold.webp"
+        }
+    ]
+}

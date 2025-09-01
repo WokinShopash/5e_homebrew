@@ -155,6 +155,78 @@
             "foundrySystem": {
                 "name": "Find Kin"
             }
+        },
+        {
+            "name": "Cloying Darkness",
+            "source": "midgardheroeshandbook",
+            "level": 1,
+            "school": "N",
+            "time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "entries": [
+                "You reach out with a hand of decaying shadows. Make a ranged spell attack. If it hits, the target takes {@damage 2d8} necrotic damage and must make a Constitution saving throw.",
+                "If it fails, its visual organs are enveloped in shadow until the start of your next turn, causing it to treat all lighting as if it's one step lower in intensity (it treats bright light as dim, dim light as darkness, and darkness as magical darkness)."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "page": 158,
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "foundryImg": "icons/magic/perception/silhouette-stealth-shadow.webp",
+            "foundrySystem": {
+                "name": "Cloying Darkness"
+            }
         }
     ]
 }

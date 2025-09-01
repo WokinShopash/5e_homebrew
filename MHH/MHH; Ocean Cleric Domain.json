@@ -111,7 +111,7 @@
                 "You gain domain spells at the cleric levels listed in the Ocean Domain Spells table. See the Divine Domain class feature for how domain spells work.",
                 {
                     "type": "table",
-                    "caption": "Passions Domain Spells",
+                    "caption": "Ocean Domain Spells",
                     "colLabels": [
                         "Cleric Level",
                         "Spells"
